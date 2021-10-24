@@ -292,7 +292,7 @@ html {
 
   display: grid;
   grid-template-columns: 58px 444px 58px 40px min-content min-content auto;
-  /* grid-template-rows: 114px min-content min-content auto min-content; */
+  grid-template-rows: 130px min-content;
   position: relative;
 }
 
@@ -327,7 +327,7 @@ html {
 }
 
 .number {
-  grid-column: 7/-1;
+  grid-column: 6/-1;
   grid-row: 1/2;
   align-self: end;
   margin: 0;
@@ -577,39 +577,42 @@ html {
 
 .exclusive-delivery {
   margin: 0;
-  margin-top: 90px;
-  margin-right: 140px;
-  margin-bottom: 97px;
-  margin-left: 140px;
-  width: 1160px;
+  padding-top: 90px;
+  padding-bottom: 97px;
+  width: 1440px;
 
   display: flex;
   justify-content: center;
-  background-color: #F0F0F0;
 }
 
-.delivery-link-image {
+.delivery-link {
   margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+  width: 1160px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-link
+
+.delivery-image {
+  margin: 0;
+  min-width: 125px;
 
   background-image: url(../img/icons/delivery.svg);
   background-repeat: no-repeat;
   background-color: #FFE17F;
   background-position: center;
-  text-decoration: none;
-  padding-top: 35px;
-  padding-right: 39px;
-  padding-bottom: 34px;
-  padding-left: 39px;
-  box-sizing: border-box;
-  width: 125px;
 }
 
-.delivery-link-description {
+.delivery-description {
   margin: 0;
-  padding: 0;
   padding-top: 37px;
-  padding-bottom: 43px;
-  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 40px;
 
   font-family: Raleway;
   font-style: normal;
@@ -620,13 +623,25 @@ html {
   color: #000000;
   text-transform: uppercase;
   width: 910px;
-
 }
 
-.delivery-link-information {
+.delivery-informaton {
   margin: 0;
   padding: 0;
-  width: 125px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+
+  background-color: #DCDCDC;
+  align-self: center;
+  margin-right: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+  opacity: 0.3;
 }
 
 .self-presentation {
