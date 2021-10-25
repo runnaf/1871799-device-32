@@ -60,7 +60,7 @@
     </header>
 
     <main class="main-catalog">
-      <hi class="catalog-title">Моноподы для селфи</hi>
+      <h1 class="catalog-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -163,7 +163,7 @@
 
         <div class="sorting-container">
           <form class="sorting-type">
-            <label class="sorting-title" for="sorting">Сортировка</label>
+            <label class="sorting-title" for="sorting">Сортировка:</label>
             <select class="select-control" id="sorting" name="sorting">
               <option value="popular">Сначала популярное</option>
               <option value="cheap">Сначала дешёвое</option>
@@ -173,10 +173,10 @@
             <button class="visually-hidden" type="submit">Отсортировать продукты</button>
           </form>
 
-          <button class="button button-up" type="button">
+          <button class="button-sorting button-up" type="button">
             <span class="visually-hidden">Возрастание</span>
           </button>
-          <button class="button button-down" type="button">
+          <button class="button-sorting button-down" type="button">
             <span class="visually-hidden">Убывание</span>
           </button>
         </div>
@@ -189,6 +189,7 @@
               </a>
               <a class="product-title-link" href="#">Любительская селфи-палка</a>
               <span class="product-card-price">500 ₽</span>
+              <button class="button" type="button">Подробнее</button>
             </li>
 
             <li class="product-card">
@@ -200,7 +201,7 @@
             </li>
 
             <li class="product-card">
-              <a class="product-img-link" href=" href=" #">
+              <a class="product-img-link" href="#">
                 <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
               </a>
               <a class="product-title-link" href="#">Непотопляемая<br> селфи-палка</a>
@@ -211,6 +212,7 @@
               <a class="product-img-link" href="#">
                 <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
               </a>
+              <span class="new">new</span>
               <a class="product-title-link" href="#">Селфи-палка «Следуй за мной»</a>
               <span class="product-card-price">4900 ₽</span>
             </li>
@@ -235,9 +237,11 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">3</a>
             </li>
-            <a class="pagination-link pagination-next" href="#">
+            <li class="pagination-item">
+            <a class="pagination-link pagination-next"  href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>
+            </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">15</a>
             </li>
