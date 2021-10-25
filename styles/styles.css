@@ -493,7 +493,6 @@ html {
   display: grid;
   grid-template-rows: 160px auto;
   row-gap: 33px;
-  justify-content: center;
   align-items: center;
   font-family: Raleway;
   font-style: normal;
@@ -510,7 +509,6 @@ html {
   align-self: center;
   margin: auto 0;
 }
-
 
 .services {
   margin: 0 auto;
