@@ -443,6 +443,11 @@ img {
   background-color: #000000;
 }
 
+.navigation-information-link:hover {
+  border-color: #AF4FFF;
+  outline: none;
+}
+
 .navigation-information-link:focus {
   border-color: #AF4FFF;
   outline: none;
