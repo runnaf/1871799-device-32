@@ -2472,6 +2472,19 @@ img {
   margin-left: 9px;
 }
 
+.button-more:hover {
+  background-color: #FFC700;
+  background-image: none;
+}
+
+.button-more:focus {
+  background-color: transparent;
+}
+
+.button-more:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog-right-column {
   width: 972px;
   display: grid;
@@ -2529,6 +2542,8 @@ img {
   margin: auto 0;
   justify-self: center;
   display: none;
+  background-image: linear-gradient(180deg, transparent 21px, #FFC700 21px, #FFC700 29px, transparent 29px, transparent);
+  outline: none;
 }
 
 .button-current .button-product {
@@ -2565,6 +2580,17 @@ img {
   color: #AF4FFF;
 }
 
+.button-product:hover {
+  background-color: #FFC700;
+}
+
+.button-product:focus {
+  background-color: transparent;
+}
+
+.button-product:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .product-title-link {
   grid-column: 1/2;
@@ -2633,7 +2659,7 @@ img {
 }
 
 .button-download:hover {
-border-color: #000000;
+  border-color: #000000;
 }
 
 .button-download:focus-visible {
@@ -2641,8 +2667,8 @@ border-color: #000000;
 }
 
 .button-download:active {
-border-color: rgba(0, 0, 0, 0.3);
-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination {
@@ -2680,7 +2706,7 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-button:hover {
-background-color: #DCDCDC;
+  background-color: #DCDCDC;
 }
 
 .pagination-button:focus-visible {
@@ -2688,9 +2714,10 @@ background-color: #DCDCDC;
 }
 
 .pagination-button:active {
-border-color: transparent;
-color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.2);
 }
+
 .pagination-list {
   display: flex;
 }
@@ -2717,16 +2744,14 @@ color: rgba(0, 0, 0, 0.2);
 }
 
 .pagination-link:hover[href] {
-color: #444444;
+  color: #444444;
 }
 
 .pagination-link:focus-visible[href] {
-border-color: #AF4FFF;
+  border-color: #AF4FFF;
 }
 
 .pagination-link:active[href] {
-border-color: transparent;
-color: rgba(68, 68, 68, 0.1);
+  border-color: transparent;
+  color: rgba(68, 68, 68, 0.1);
 }
-
-
