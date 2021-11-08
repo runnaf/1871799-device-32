@@ -24,12 +24,14 @@
         <ul class="navigation-user">
           <li class="navigation-user-item first-item">
             <form class="site-search">
+              <label class="search-label">
+                <svg class="search-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Поиск по сайту.">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="m15.7 14.3-3.1-3.1A7 7 0 0 0 7 0a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
+                </svg>
+              </label>
               <input class="search" type="search" placeholder="Поиск по сайту">
-              <svg class="search-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Поиск по сайту.">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="m15.7 14.3-3.1-3.1A7 7 0 0 0 7 0a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
-              </svg>
               <button class="button-search">Найти</button>
             </form>
           </li>
@@ -139,11 +141,11 @@
 
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  от <input class="range-input" type="number" name="min-price" value="0">
+                  от <input class="range-input" type="number" name="min-price" placeholder="0">
                 </label>
 
                 <label class="catalog-filter-label">
-                  до <input class="range-input" type="number" name="max-price" value="5000" style="width: 119px;">
+                  до <input class="range-input" type="number" name="max-price" placeholder="5000">
                 </label>
               </div>
             </div>
@@ -153,39 +155,44 @@
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Черный</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="black" checked id="black">
+                <label class="control-label" for="black">Черный</label>
+                <svg class="checkbox-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чекбокс выбран.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" />
+                </svg>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Белый</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="white" checked id="white">
+                <label class="control-label" for="white">Белый</label>
+                <svg class="checkbox-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чекбокс выбран.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" />
+                </svg>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="blue">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Синий</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="blue" id="blue">
+                <label class="control-label" for="blue">Синий</label>
+                <svg class="checkbox-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чекбокс выбран.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" />
+                </svg>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="red">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красный</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="red" id="red">
+                <label class="control-label" for="red">Красный</label>
+                <svg class="checkbox-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чекбокс выбран.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" />
+                </svg>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="rose">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Розовый</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="rose" id="rose">
+                <label class="control-label" for="rose">Розовый</label>
+                <svg class="checkbox-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чекбокс выбран.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z" />
+                </svg>
               </li>
             </ul>
           </fieldset>
@@ -194,18 +201,15 @@
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="available"
-                    checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Есть</span>
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="available" checked
+                  id="available">
+                <label class="control-label" for="available">Есть</label>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="unavailable">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Нет</span>
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="unavailable"
+                  id="unavailable">
+                <label class="control-label" for="unavailable">Нет</label>
                 </label>
               </li>
             </ul>
@@ -224,38 +228,35 @@
 
             <button class="sort" type="submit">
               <span class="visually-hidden">Отсортировать товары.</span>
-              <svg class="sort-icon" aria-hidden="true" focusable="false" width="11" height="6"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать товары.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="m6.1 5.8 4.7-4.5c.3-.3.3-.8 0-1.1a.8.8 0 0 0-1.1 0l-4.2 4-4.2-4A.8.8 0 0 0 .2.2L0 .8l.2.5 4.7 4.5c.4.3.8.3 1.2 0Z" />
-              </svg>
             </button>
           </form>
 
-          <button class="button-sorting  button-sorting-current" type="button">
+          <button class="button-sorting asc" type="button">
             <span class="visually-hidden">Возрастание</span>
             <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по возрастанию.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
-              </svg>
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по убыванию.">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
+            </svg>
           </button>
-          <button class="button-sorting button-down" type="button">
+
+          <button class="button-sorting button-sorting-current" type="button">
             <span class="visually-hidden">Убывание</span>
             <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по убыванию.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
-              </svg>
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по возрастанию.">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
+            </svg>
           </button>
         </div>
 
         <div class="catalog-right-column">
           <ul class="product-list">
-            <li class="product-card">
+            <li class="product-card button-current">
               <a class="product-img-link" href="#">
                 <img class="product-card-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="">
               </a>
               <a class="product-title-link" href="#">Любительская селфи-палка</a>
               <span class="product-card-price">500 ₽</span>
-              <button class="button" type="button">Подробнее</button>
+              <button class="button button-product" type="button">Подробнее</button>
             </li>
 
             <li class="product-card">
@@ -263,7 +264,8 @@
                 <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="">
               </a>
               <a class="product-title-link" href="#">Профессиональная<br> селфи-палка</a>
-              <span class="product-card-price">1500 ₽</span>
+              <span class="product-card-price">1 500 ₽</span>
+              <button class="button button-product" type="button">Подробнее</button>
             </li>
 
             <li class="product-card">
@@ -271,7 +273,8 @@
                 <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
               </a>
               <a class="product-title-link" href="#">Непотопляемая<br> селфи-палка</a>
-              <span class="product-card-price">2500 ₽</span>
+              <span class="product-card-price">2 500 ₽</span>
+              <button class="button button-product" type="button">Подробнее</button>
             </li>
 
             <li class="product-card">
@@ -280,7 +283,8 @@
               </a>
               <span class="new">new</span>
               <a class="product-title-link" href="#">Селфи-палка «Следуй за мной»</a>
-              <span class="product-card-price">4900 ₽</span>
+              <span class="product-card-price">4 900 ₽</span>
+              <button class="button button-product" type="button">Подробнее</button>
             </li>
           </ul>
 
@@ -288,36 +292,32 @@
             <button class="button-download" type="button">Загрузить ещё</button>
           </div>
 
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="last">Назад</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="next">Вперед</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+          <div class="pagination">
+            <button class="pagination-button" type="button">Назад</button>
+
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span>...</span>
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+            <button class="pagination-button" type="button">Вперёд</button>
+          </div>
       </section>
     </main>
 
