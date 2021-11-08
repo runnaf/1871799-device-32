@@ -59,7 +59,7 @@
               </svg>
             </a>
           </li>
-          <li class="navigation-user-item navigation-user-index">
+          <li class="navigation-user-item navigation-user-index cart-item-open">
             <a class="navigation-user-link link cart" href="#">
               <span>Kорзина</span>
               <svg class="navigarion-user-icon cart-icon" aria-hidden="true" focusable="false" width="16" height="14"
@@ -69,6 +69,34 @@
               </svg>
               <div class="amound-of-goods">2</div>
             </a>
+            <div class="popover  popover-cart">
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="popover-product" src="img/popover/product-1-small.jpg" width="41" height="43">
+                    <p class="cart-item-title">Любительская селфи-палка</p>
+                    <button type="button" class="cart-item-button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img class="popover-product" src="img/popover/product-2-small.jpg" width="41" height="43">
+                    <p class="cart-item-title">Профессиональная cелфи-палка</p>
+                    <button class="cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="total">
+                  <p>Товаров: <span>2</span></p>
+                  <p>Сумма: <span>2000 &#8381;</span></p>
+                </div>
+                <button class="button-open-cart">
+                  Открыть корзину
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
 
@@ -85,7 +113,8 @@
                 <li class="additional-item"><a class="prodact-link link" href="#">Виртуальная реальность</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Фитнес-браслеты</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Квадрокоптеры</a></li>
-                <li class="additional-item"><a class="prodact-link link" href="catalog-monopod.html">Моноподы для селфи</a></li>
+                <li class="additional-item"><a class="prodact-link link" href="catalog-monopod.html">Моноподы для
+                    селфи</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Умные часы</a></li>
                 <li class="additional-item helmet-cams-item"><a class="prodact-link link" href="#">Экшн-камеры</a></li>
               </ul>
@@ -111,21 +140,24 @@
         <section class="product-slider">
           <h2 class="visually-hidden">Квадракоптер</h2>
 
-            <img class="slider-image" src="img/slider-1.png" alt="Белый квадракоптер оснащенный лазером" width="560" height="560">
+          <img class="slider-image" src="img/slider-1.png" alt="Белый квадракоптер оснащенный лазером" width="560"
+            height="560">
 
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-              <svg class="slider-icon" aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Предыдущее фото.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-          </svg>
-            </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+            <svg class="slider-icon" aria-hidden="true" focusable="false" width="20" height="60"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Предыдущее фото.">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
+          </button>
 
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-              <svg class="slider-icon slider-next-icon" aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Следующее фото.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-          </svg>
-            </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+            <svg class="slider-icon slider-next-icon" aria-hidden="true" focusable="false" width="20" height="60"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Следующее фото.">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+            </svg>
+          </button>
 
           <p class="number">01</p>
 
@@ -194,8 +226,10 @@
               <a class="product-link" href="#">
                 <svg class="product-icon echn-camera" width="71" height="87" xmlns="http://www.w3.org/2000/svg"
                   role="img" aria-label="Экшн-камеры.">
-                  <path d="M53.3 1.5C53.3.8 52.8 0 52 0H9c-.7 0-1.3.8-1.3 1.5V5h45.6V1.5ZM54.2 81.8h-9.6V71.4h-7V74H18.8a3.5 3.5 0 0 0-3.2-2.1h-12c-2 0-3.6 1.6-3.6 3.5v3c0 2 1.6 3.5 3.6 3.5h12c1.5 0 2.8-.9 3.3-2.3h18.7v2.3h-9.5c-.5 0-1 .4-1 1V86c0 .5.5 1 1 1h26.1c.5 0 1-.5 1-1v-3.2c0-.6-.5-1-1-1ZM60.7 12.4a7 7 0 0 0-6.8-5H7.1a7 7 0 0 0-7.1 7v46.9c0 3.9 3.3 7 7.1 7H54c3.9 0 7.1-3.1 7.1-7V50.9a23.2 23.2 0 0 0-.3-38.5ZM12.2 62.2a6 6 0 1 1 0-11.9 6 6 0 0 1 0 11.9Zm6-32.7c0 .8-.6 1.5-1.4 1.5h-9c-.7 0-1.4-.7-1.4-1.5V15.4c0-.8.7-1.4 1.4-1.4h9c.8 0 1.4.6 1.4 1.4v14.1ZM47.8 52a20 20 0 1 1 0-40.2 20 20 0 0 1 0 40.2Z" />
-                  <path d="M47.8 44a12.2 12.2 0 1 0 0-24.5 12.2 12.2 0 0 0 0 24.5ZM31.6 33.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM64 33.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM39.1 19.4a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM56.4 47a1.4 1.4 0 1 0 0-3 1.4 1.4 0 0 0 0 3ZM55.7 19a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM39.8 47.3a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z" />
+                  <path
+                    d="M53.3 1.5C53.3.8 52.8 0 52 0H9c-.7 0-1.3.8-1.3 1.5V5h45.6V1.5ZM54.2 81.8h-9.6V71.4h-7V74H18.8a3.5 3.5 0 0 0-3.2-2.1h-12c-2 0-3.6 1.6-3.6 3.5v3c0 2 1.6 3.5 3.6 3.5h12c1.5 0 2.8-.9 3.3-2.3h18.7v2.3h-9.5c-.5 0-1 .4-1 1V86c0 .5.5 1 1 1h26.1c.5 0 1-.5 1-1v-3.2c0-.6-.5-1-1-1ZM60.7 12.4a7 7 0 0 0-6.8-5H7.1a7 7 0 0 0-7.1 7v46.9c0 3.9 3.3 7 7.1 7H54c3.9 0 7.1-3.1 7.1-7V50.9a23.2 23.2 0 0 0-.3-38.5ZM12.2 62.2a6 6 0 1 1 0-11.9 6 6 0 0 1 0 11.9Zm6-32.7c0 .8-.6 1.5-1.4 1.5h-9c-.7 0-1.4-.7-1.4-1.5V15.4c0-.8.7-1.4 1.4-1.4h9c.8 0 1.4.6 1.4 1.4v14.1ZM47.8 52a20 20 0 1 1 0-40.2 20 20 0 0 1 0 40.2Z" />
+                  <path
+                    d="M47.8 44a12.2 12.2 0 1 0 0-24.5 12.2 12.2 0 0 0 0 24.5ZM31.6 33.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM64 33.2a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM39.1 19.4a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM56.4 47a1.4 1.4 0 1 0 0-3 1.4 1.4 0 0 0 0 3ZM55.7 19a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9ZM39.8 47.3a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z" />
                 </svg>
               </a>
               <a class="product-name" href="#">Экшн-камеры</a>
