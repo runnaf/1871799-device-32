@@ -417,7 +417,7 @@ img {
   padding-bottom: 20px;
 }
 
-.popover-content::after {
+.popover::after {
   content: "";
   position: absolute;
   left: 52%;
@@ -2145,17 +2145,10 @@ img {
   right: -36px;
 }
 
-.popover-modal::after {
+.information .popover::after {
     content: "";
-    position: absolute;
     left: 80%;
-    bottom: 100%;
-    width: 0;
-    height: 0;
-    margin-left: -15px;
-    border: 7px solid;
-    border-color: transparent;
-    border-bottom-color: rgba(0, 0, 0, 1);
+    border-width: 8px;
 }
 
 .popover-modal p {
