@@ -172,6 +172,10 @@ img {
   position: relative;
 }
 
+.navigation-user-item:first-of-type {
+  margin-right: 15px;
+}
+
 .navigation-user-index {
   margin-top: 2px;
 }
@@ -282,6 +286,10 @@ img {
   background-color: #000000;
 }
 
+.enter-item {
+  margin-right: auto;
+}
+
 .navigation-user-link {
   padding-top: 8px;
   padding-right: 19px;
@@ -327,9 +335,17 @@ img {
 }
 
 .log-out {
-  visibility: hidden;
-  padding-left: 7px;
+  display: none;
   opacity: 0.6;
+}
+
+.log-out-open {
+  display: block;
+}
+
+.compare-item {
+  margin-right: 18px;
+  margin-left: auto;
 }
 
 .log-out-open {
@@ -491,17 +507,17 @@ img {
 }
 
 .cart-item-button:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .cart-item-button:focus-visible {
-opacity: 1;
-border-color: #AF4FFF;
+  opacity: 1;
+  border-color: #AF4FFF;
 }
 
 .cart-item-button:active {
-border-color: transparent;
-opacity: 0.3;
+  border-color: transparent;
+  opacity: 0.3;
 }
 
 .total {
@@ -1703,7 +1719,7 @@ opacity: 0.3;
   font-style: normal;
 }
 
-.lodo-footer {
+.logo-footer {
   grid-column: 1/-1;
   grid-row: 1/2;
   width: fit-content;
@@ -1725,7 +1741,6 @@ opacity: 0.3;
 .lodo-footer:active {
   opacity: 0.3;
 }
-
 
 .footer-contacts {
   min-width: 238px;
@@ -2351,7 +2366,8 @@ opacity: 0.3;
 }
 
 .header-catalog {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
+  padding-bottom: 1px;
 }
 
 .navigations-header-catalog {
@@ -2359,7 +2375,7 @@ opacity: 0.3;
 }
 
 .navigations-header-catalog .logo-header {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .main-catalog {
@@ -2632,7 +2648,7 @@ opacity: 0.3;
 .color {
   display: flex;
   flex-direction: column;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
 }
 
 .catalog-filter-list {
@@ -3002,7 +3018,7 @@ opacity: 0.3;
   padding: 0;
   padding-right: 140px;
   padding-left: 72px;
-  margin-bottom: 76px;
+  margin-bottom: 78px;
   background-color: #FFFFFF;
   box-sizing: border-box;
 }
@@ -3144,6 +3160,10 @@ opacity: 0.3;
   transform: translate(7px, 29px);
 }
 
+.new-closed {
+  display: none;
+}
+
 .download-more {
   width: 760px;
   display: flex;
@@ -3265,3 +3285,14 @@ opacity: 0.3;
   border-color: transparent;
   color: rgba(68, 68, 68, 0.1);
 }
+
+.footer-catalog .logo-footer {
+  margin-bottom: 4px;
+}
+
+.footer-catalog .page-footer-container {
+  row-gap: 13px;
+}
+
+
+
