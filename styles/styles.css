@@ -444,7 +444,6 @@ img {
   right: 0;
 }
 
-
 .cart-item-title {
   margin-top: 0;
   margin-bottom: 2px;
@@ -462,22 +461,26 @@ img {
 
 .cart-item-button {
   position: relative;
-  width: 11px;
-  height: 11px;
+  width: 20px;
+  height: 20px;
   border: 2px solid transparent;
+  border-radius: 50%;
   background-color: transparent;
-  margin-top: 10px;
-  margin-left: 8px;
+  outline: none;
+  transform: translate(5px, 3px);
 }
 
 .cart-item-button::after,
 .cart-item-button::before {
   content: "";
-  width: 13px;
+  width: 14px;
   height: 2px;
   background-color: #FFFFFF;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   transform: rotate(45deg);
   position: absolute;
 }
@@ -487,11 +490,25 @@ img {
   transform: rotate(135deg);
 }
 
+.cart-item-button:hover {
+opacity: 0.6;
+}
+
+.cart-item-button:focus-visible {
+opacity: 1;
+border-color: #AF4FFF;
+}
+
+.cart-item-button:active {
+border-color: transparent;
+opacity: 0.3;
+}
+
 .total {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   background: #1A1A1A;
   padding-right: 22px;
   padding-left: 20px;
@@ -508,7 +525,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 17px;
   min-height: 50px;
   font-family: Raleway;
@@ -521,9 +538,22 @@ img {
   color: #000000;
   width: 280px;
   margin: 0 auto;
-
+  outline: none;
+  border: 5px solid transparent;
 }
 
+.button-open-cart:hover {
+  background-color: #DCDCDC;
+}
+
+.button-open-cart:focus-visible {
+  border-color: #AF4FFF;
+}
+
+.button-open-cart:active {
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.2);
+}
 
 .navigation-informations {
   padding-left: 41px;
