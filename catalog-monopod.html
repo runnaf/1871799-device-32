@@ -25,11 +25,6 @@
           <li class="navigation-user-item first-item">
             <form class="site-search">
               <label class="search-label">
-                <svg class="search-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Поиск по сайту.">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="m15.7 14.3-3.1-3.1A7 7 0 0 0 7 0a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
-                </svg>
                 <span class="visually-hidden">Поиск по сайту</span>
               </label>
               <input class="search" type="search" placeholder="Поиск по сайту">
@@ -74,15 +69,19 @@
                 <h2 class="visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
-                    <img class="popover-product" src="img/popover/product-1-small.jpg" width="41" height="43">
+                    <a class="popover-product" href="#">
+                    <img class="popover-product-img" src="img/popover/product-1-small.jpg" width="41" height="43" alt="">
                     <p class="cart-item-title">Любительская селфи-палка</p>
+                    </a>
                     <button type="button" class="cart-item-button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                   <li class="cart-item">
-                    <img class="popover-product" src="img/popover/product-2-small.jpg" width="41" height="43">
+                    <a class="popover-product" href="#">
+                    <img class="popover-product-img" src="img/popover/product-2-small.jpg" width="41" height="43" alt="">
                     <p class="cart-item-title">Профессиональная cелфи-палка</p>
+                    </a>
                     <button class="cart-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
@@ -92,9 +91,9 @@
                   <p>Товаров: <span>2</span></p>
                   <p>Сумма: <span>2000 &#8381;</span></p>
                 </div>
-                <button class="button-open-cart">
+                <a class="link-open-cart" href="#">
                   Открыть корзину
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -113,8 +112,7 @@
                 <li class="additional-item"><a class="prodact-link link" href="#">Виртуальная реальность</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Фитнес-браслеты</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Квадрокоптеры</a></li>
-                <li class="additional-item"><a class="prodact-link link" href="catalog-monopod.html">Моноподы для
-                    селфи</a></li>
+                <li class="additional-item"><a class="prodact-link link">Моноподы для селфи</a></li>
                 <li class="additional-item"><a class="prodact-link link" href="#">Умные часы</a></li>
                 <li class="additional-item helmet-cams-item"><a class="prodact-link link" href="#">Экшн-камеры</a></li>
               </ul>
@@ -253,23 +251,21 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
 
-            <button class="sort" type="submit">
+            <button class="sort" type="button">
               <span class="visually-hidden">Отсортировать товары.</span>
             </button>
           </form>
 
           <a class="link-sorting asc" href="#">
             <span class="visually-hidden">Возрастание</span>
-            <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10"
-              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по убыванию.">
+            <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по убыванию.">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
             </svg>
           </a>
 
-          <a class="link-sorting link-sorting-current" href="#">
+          <a class="link-sorting link-sorting-current">
             <span class="visually-hidden">Убывание</span>
-            <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10"
-              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по возрастанию.">
+            <svg class="sorting-icon" aria-hidden="true" focusable="false" width="11" height="10" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать по возрастанию.">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 10 0 0h11" />
             </svg>
           </a>
@@ -277,43 +273,43 @@
 
         <div class="catalog-right-column">
           <ul class="product-list">
-            <li class="product-card button-current">
-              <a class="product-img-link" href="#">
+            <li class="product-item">
+              <a class="product-card link-product-current">
                 <img class="product-card-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="">
+                <span class="new new-closed">new</span>
+                <p class="product-title-link">Любительская селфи-палка</p>
+                <span class="product-card-price">500 ₽</span>
               </a>
-              <span class="new new-closed">new</span>
-              <a class="product-title-link" href="#">Любительская селфи-палка</a>
-              <span class="product-card-price">500 ₽</span>
               <button class="button button-product" type="button">Подробнее</button>
             </li>
 
-            <li class="product-card">
-              <a class="product-img-link" href="#">
+            <li class="product-item">
+              <a class="product-card" href="#">
                 <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="">
+                <span class="new new-closed">new</span>
+                <p class="product-title-link">Профессиональная<br> селфи-палка</p>
+                <span class="product-card-price">1 500 ₽</span>
               </a>
-              <span class="new new-closed">new</span>
-              <a class="product-title-link" href="#">Профессиональная<br> селфи-палка</a>
-              <span class="product-card-price">1 500 ₽</span>
               <button class="button button-product" type="button">Подробнее</button>
             </li>
 
-            <li class="product-card">
-              <a class="product-img-link" href="#">
+            <li class="product-item">
+              <a class="product-card" href="#">
                 <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
+                <span class="new new-closed">new</span>
+                <p class="product-title-link">Непотопляемая<br> селфи-палка</p>
+                <span class="product-card-price">2 500 ₽</span>
               </a>
-              <span class="new new-closed">new</span>
-              <a class="product-title-link" href="#">Непотопляемая<br> селфи-палка</a>
-              <span class="product-card-price">2 500 ₽</span>
               <button class="button button-product" type="button">Подробнее</button>
             </li>
 
-            <li class="product-card">
-              <a class="product-img-link" href="#">
+            <li class="product-item">
+              <a class="product-card" href="#">
                 <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
+                <span class="new">new</span>
+                <p class="product-title-link">Селфи-палка «Следуй за мной»</p>
+                <span class="product-card-price">4 900 ₽</span>
               </a>
-              <span class="new">new</span>
-              <a class="product-title-link" href="#">Селфи-палка «Следуй за мной»</a>
-              <span class="product-card-price">4 900 ₽</span>
               <button class="button button-product" type="button">Подробнее</button>
             </li>
           </ul>
@@ -324,7 +320,7 @@
 
 
           <div class="pagination">
-            <button class="pagination-button" type="button">Назад</button>
+            <a class="pagination-button">Назад</a>
 
             <ul class="pagination-list">
               <li class="pagination-item">
@@ -346,7 +342,7 @@
                 <a class="pagination-link" href="#">15</a>
               </li>
             </ul>
-            <button class="pagination-button" type="button">Вперёд</button>
+            <a class="pagination-button" href="#">Вперёд</a>
           </div>
         </div>
       </section>
@@ -438,4 +434,5 @@
     </footer>
   </div>
 </body>
+
 </html>
