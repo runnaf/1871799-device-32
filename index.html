@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 </head>
 
 <body class="body-page">
@@ -69,15 +71,19 @@
                 <h2 class="visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
-                    <img class="popover-product" src="img/popover/product-1-small.jpg" width="41" height="43" alt="">
+                    <a class="popover-product" href="#">
+                    <img class="popover-product-img" src="img/popover/product-1-small.jpg" width="41" height="43" alt="">
                     <p class="cart-item-title">Любительская селфи-палка</p>
+                    </a>
                     <button type="button" class="cart-item-button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                   <li class="cart-item">
-                    <img class="popover-product" src="img/popover/product-2-small.jpg" width="41" height="43" alt="">
+                    <a class="popover-product" href="#">
+                    <img class="popover-product-img" src="img/popover/product-2-small.jpg" width="41" height="43" alt="">
                     <p class="cart-item-title">Профессиональная cелфи-палка</p>
+                    </a>
                     <button class="cart-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
@@ -87,9 +93,9 @@
                   <p>Товаров: <span>2</span></p>
                   <p>Сумма: <span>2000 &#8381;</span></p>
                 </div>
-                <button class="button-open-cart">
+                <a class="link-open-cart" href="#">
                   Открыть корзину
-                </button>
+                </a>
               </div>
             </div>
           </li>
