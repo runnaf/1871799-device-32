@@ -2735,6 +2735,7 @@ right: -209px;
 .color {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
@@ -2753,6 +2754,7 @@ right: -209px;
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-left: 72px;
   padding-right: 131px;
@@ -3341,6 +3343,7 @@ right: -209px;
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
