@@ -3081,6 +3081,7 @@ right: -209px;
 
 .button-more:active {
   color: rgba(0, 0, 0, 0.3);
+  background-color: #FFC700;
 }
 
 .catalog-right-column {
@@ -3155,12 +3156,15 @@ right: -209px;
   opacity: 0.6;
 }
 
+.link-product-current
+
+
 .product-card:hover + .button-product {
   display: block;
   z-index: 1;
 }
 
-.product-card:hover:not(.button-current) .product-card-image {
+.product-card:hover .product-card-image {
   opacity: 0.6;
 }
 
