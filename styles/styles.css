@@ -3164,7 +3164,7 @@ right: -209px;
   opacity: 0.6;
 }
 
-.product-card:focus .button-product {
+.product-card:focus + .button-product {
   display: none;
 }
 
@@ -3178,14 +3178,19 @@ right: -209px;
 
 .button-product:hover {
   background-color: #FFC700;
+  display: block;
 }
 
 .button-product:focus {
   background-color: transparent;
+  background-image: none;
+  display: none;
 }
 
 .button-product:active {
   color: rgba(0, 0, 0, 0.3);
+  background-color: #FFC700;
+  display: block;
 }
 
 .product-title-link {
