@@ -399,7 +399,7 @@ img {
   display: none;
   width: 220px;
   box-sizing: border-box;
-  font-family: Rubik;
+  font-family: "Rubik", "Times New Roman", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -624,7 +624,7 @@ img {
   padding-left: 19px;
   padding-right: 17px;
   min-height: 50px;
-  font-family: Raleway;
+  font-family: "Raleway", "Times New Roman", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1197,7 +1197,7 @@ img {
 }
 
 .product-name {
-  font-family: Raleway;
+  font-family: "Raleway", "Times New Roman", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1257,7 +1257,7 @@ img {
   min-width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: Raleway;
+  font-family: "Raleway", "Times New Roman", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1320,7 +1320,7 @@ img {
 .courier-icon {
   position: absolute;
   top: 85px;
-  right: -213px;
+  right: -237px;
 }
 
 .warranty {
@@ -1347,12 +1347,16 @@ right: -209px;
   color: #000000;
 }
 
-.service-description {
-  width: 480px;
+.delivery .service-description {
+  width: 455px;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
   color: #444444;
+}
+
+.service-description {
+  width: 481px;
 }
 
 .exclusive-delivery {
