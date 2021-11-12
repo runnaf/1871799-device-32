@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 </head>
 
 <body class="body-page">
@@ -30,7 +30,7 @@
                 <span class="visually-hidden">Поиск по сайту</span>
               </label>
               <input class="search" type="search" placeholder="Поиск по сайту">
-              <button class="button-search">Найти</button>
+              <button class="button-search" type="submit">Найти</button>
             </form>
           </li>
 
@@ -75,7 +75,7 @@
                     <img class="popover-product-img" src="img/popover/product-1-small.jpg" width="41" height="43" alt="">
                     <p class="cart-item-title">Любительская селфи-палка</p>
                     </a>
-                    <button type="button" class="cart-item-button">
+                    <button class="cart-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -687,7 +687,7 @@
 
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="submit">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -722,19 +722,19 @@
               </div>
             </div>
             <div class="number-modal">
-              <button class="minus change-quantity">
+              <button class="minus change-quantity" type="submit">
                 <span class="visually-hidden">Уменьшить количество товара</span>
               </button>
               <input class="quantity-field field-modal" type="number" id="quantity" name="quantity" min="1" max="100"
                 step="1" value="1">
-              <button class="plus change-quantity">
+              <button class="plus change-quantity" type="submit">
                 <span class="visually-hidden">Добавить товар</span>
               </button>
             </div>
 
           </div>
         </form>
-        <button class="button button-modal">Отправить</button>
+        <button class="button button-modal" type="submit">Отправить</button>
       </section>
     </div>
   </div>
